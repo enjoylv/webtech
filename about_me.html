@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" href="IMG/Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="bg-dark border-bottom">
+        <header class="d-flex flex-wrap justify-content-between py-2">
+            <a href="index.html" class="d-flex align-items-center ms-4 mb-0 me-auto logo">
+                <img src="img/Logo.png" alt="logo">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
+                <li class="nav-item"><a href="articles_page.html" class="nav-link text-light">Articles</a></li>
+                <li class="nav-item"><a href="about_me.html" class="nav-link active text-info">About me</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="text-light mx-5 mt-3">
+        <a href="index.html">Home</a>
+        <span>></span>
+        <a href="about_me.html">About me</a>
+    </div>
+
+    <div class="text-light mx-5 my-3">
+        <h2>About me</h2>
+    </div>
+
+    <nav class="mx-5">
+        <div class="nav nav-tabs bg-dark" id="nav-tab" role="tablist">
+            <button class="nav-link text-info active" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="true">Biography</button>
+            <button class="nav-link text-info" id="nav-social-tab" data-bs-toggle="tab" data-bs-target="#nav-social" type="button" role="tab" aria-controls="nav-social" aria-selected="false">Social media</button>
+            <button class="nav-link text-info" id="nav-travels-tab" data-bs-toggle="tab" data-bs-target="#nav-travels" type="button" role="tab" aria-controls="nav-travels" aria-selected="false">Upcoming trips</button>
+        </div>
+    </nav>
+    <div class="tab-content bg-secondary text-light mx-5 p-3" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+            <p>I'm 31 years old, working full time in Accenture Latvia and freelancing in journalism/content creating.</p>
+            <p>I've got a bachelor's degree in governance and innovations, obtained in <i>Vidzeme University of Applied Sciences</i>, however currently i'm studying IT in <i>Latvian University</i> for a year.</p>
+            <p>I love travelling, outdoors and nature.</p>
+            <p>And this starts to sound like my dating profile.</p>
+        </div>
+        <div class="tab-pane fade" id="nav-social" role="tabpanel" aria-labelledby="nav-social-tab">
+            <p><a href="https://www.facebook.com/artis.spertals">Facebook</a></p>
+			   <p><a href="https://www.facebook.com/artis.spertals">Instagram</a></p>
+			      <p><a href="https://twitter.com/artis_spertals">Twitter</a></p>
+        </div>
+        <div class="tab-pane fade" id="nav-travels" role="tabpanel" aria-labelledby="nav-travels-tab">
+		<p> <i>NONE</i> scheduled, because of Covid-19, but hoping for:</p>
+           <ul>
+  <li>Georgia</li>
+  <li>Finland</li>
+  <li>Russia (St.Petersburg)</li>
+</ul>
+  <p><strong>If money wouldn't be an issue, i'd travel to:</strong></p>
+  <ol>
+  <li>Far Russia (lake Baikal)</li>
+  <li>Deep into USA</li>
+    <li>The land down under (Australia)</li>
+</ol>
+<p>If you want to join me in these travels, enter your details here:</p>
+
+<form id="frm1" action="/action_page.php">
+  Your name: <input type="text" name="name"><br>
+  Your e-mail: <input type="text" name="email"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+<p id="demo"></p>
+        </div>
+    </div>
+
+    <div class="text-light mx-5 my-4">
+        <h4>Contacts</h4>
+    </div>
+
+    <div class="mx-5 pb-5">
+        <div class="row text-light">
+            <div class="col-5">
+                <div id="map"></div>
+            </div>
+            <div class="col-6 ms-5">
+                <h6>Address:</h6>
+                <div>Unfortunately private, but you can figure it out by the map :) </div>
+                <h6 class="mt-4">Email:</h6>
+                <div>artis.spertals(at)gmail.com</div>
+                <h6 class="mt-4">Phone:</h6>
+                <div id="change">Unfortunately private, but starts with +371 :) </div>
+            </div>
+			
+        </div>
+    </div>
+	
+
+    <div class="my-5"></div>
+    <footer class="fixed-bottom">
+        <div class="p-2 ms-5 text-light">
+            © 2021 Artis Spertals
+			<button type="button" onclick='document.getElementById("change").innerHTML = "+371 26726222"'>Click Me!</button>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBkrjVTGFQ4Sc7gNBoP0sBZvyjJIS9m6Y&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/main_map.js"></script>
+	 <script src="js/function.js"></script>
+</body>
+
+</html>
